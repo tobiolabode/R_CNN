@@ -23,10 +23,10 @@ class FixedBatchNormalization(Layer):
         self.input_spec = [InputSpec(shape=input_shape)]
         shape = (input_shape[self.axis],)
 
-        self.gamma = self.add_weight(shape,
+        self.gamma = self.add_weight(shape=shape,
                                      initializer=self.gamma_init,
                                      regularizer=self.gamma_regularizer,
-                                     name='{}_gamma'.format(self.name),
+                                     name='{}_gamma'.format(self.name),  # name='{}_gamma'.
                                      trainable=False)
         self.beta = self.add_weight(shape,
                                     initializer=self.beta_init,
