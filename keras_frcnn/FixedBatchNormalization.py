@@ -28,15 +28,15 @@ class FixedBatchNormalization(Layer):
                                      regularizer=self.gamma_regularizer,
                                      name='{}_gamma'.format(self.name),  # name='{}_gamma'.
                                      trainable=False)
-        self.beta = self.add_weight(shape,
+        self.beta = self.add_weight(shape=shape,
                                     initializer=self.beta_init,
                                     regularizer=self.beta_regularizer,
                                     name='{}_beta'.format(self.name),
                                     trainable=False)
-        self.running_mean = self.add_weight(shape, initializer='zero',
+        self.running_mean = self.add_weight(shape=shape, initializer='zero',
                                             name='{}_running_mean'.format(self.name),
                                             trainable=False)
-        self.running_std = self.add_weight(shape, initializer='one',
+        self.running_std = self.add_weight(shape=shape, initializer='one',
                                            name='{}_running_std'.format(self.name),
                                            trainable=False)
 
