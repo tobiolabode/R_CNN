@@ -1,7 +1,7 @@
 from keras import backend as K
 from keras.objectives import categorical_crossentropy
 
-if K.set_image_data_format('channels_last') == 'tf':
+if K.set_image_data_format('channels_first') == 'tf':
     import tensorflow as tf
 
 lambda_rpn_regr = 1.0
