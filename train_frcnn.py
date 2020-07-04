@@ -16,6 +16,10 @@ from keras_frcnn import losses as losses
 import keras_frcnn.roi_helpers as roi_helpers
 from keras.utils import generic_utils
 
+import os
+
+os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
+
 sys.setrecursionlimit(40000)
 
 parser = OptionParser()
