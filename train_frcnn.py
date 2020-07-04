@@ -119,7 +119,7 @@ data_gen_train = data_generators.get_anchor_gt(
 data_gen_val = data_generators.get_anchor_gt(
     val_imgs, classes_count, C, nn.get_img_output_length, K.common.image_dim_ordering(), mode='val')
 
-if K.image_dim_ordering() == 'th':
+if K.image_data_format() == 'channels_first':
     input_shape_img = (3, None, None)
 else:
     input_shape_img = (None, None, 3)
