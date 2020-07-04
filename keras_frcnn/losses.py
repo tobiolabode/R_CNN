@@ -24,6 +24,7 @@ def rpn_loss_regr(num_anchors):
         else:
             x = y_true[:, :, :, 4 * num_anchors:] - y_pred
             x_abs = K.abs(x)
+            import tensorflow as tf
             x_bool = K.cast(K.less_equal(x_abs, 1.0), tf.float32)
 
             return lambda_rpn_regr * K.sum(
