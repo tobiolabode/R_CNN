@@ -1,3 +1,12 @@
+From tobi
+
+This is a fork from https://github.com/kbardool/keras-frcnn
+I changed the code with more up to date keras API. To it can run.
+
+The description below is from the oraginally repo for use.
+
+
+----------------------------------------------------------------------------------------------------------------------------
 # keras-frcnn
 Keras implementation of Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks.
 cloned from https://github.com/yhenon/keras-frcnn/
