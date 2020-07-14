@@ -4,6 +4,8 @@ This is a fork from https://github.com/kbardool/keras-frcnn
 All credit goes to the person above.
 I changed the code to be more up to date. So errors for not finding a function.
 
+I used [tutorial](https://www.analyticsvidhya.com/blog/2018/11/implementation-faster-r-cnn-python-object-detection/?utm_medium=a-step-by-step-introduction-to-the-basic-object-detection-algorithms-part-1&utm_source=blog) to help me get the dataset ready.
+
 The description below is from the oraginal repo.
 
 
