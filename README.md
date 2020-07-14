@@ -1,9 +1,10 @@
 From tobi
 
 This is a fork from https://github.com/kbardool/keras-frcnn
-I changed the code with more up to date keras API. To it can run.
+All credit goes to the person above.
+I changed the code to be more up to date. So errors for not finding a function.
 
-The description below is from the oraginally repo for use.
+The description below is from the oraginal repo.
 
 
 ----------------------------------------------------------------------------------------------------------------------------
